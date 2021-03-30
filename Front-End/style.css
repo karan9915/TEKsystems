@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(white, black);
+}
+
+header {
+    margin:0 auto;
+    background-color: #eee;
+    padding: 5px;
+    text-align: center;
+
+}
+
+ul {
+    text-align: center;
+}
+
+ 
+
+article {
+    background-color: #222;
+    color: white;
+}
+
+.container {
+    background-color: #222;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.play {
+    border: 2px solid black;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.movies li img {
+    height: 217px;
+    width: 188px;
+}

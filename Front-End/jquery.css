@@ -1,0 +1,56 @@
+.container {
+    margin-left: 2%;
+    margin-top: -3%;
+}
+
+header {
+    background-color: #ddd;
+    width: 88%;
+    height: 49px;
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+}
+
+header h1 {
+    padding-top: 4px;
+    margin-left: 19px;
+    margin-top: 31px;
+}
+
+.block {
+    background-color: #ddd;
+    width: 53%;
+    height: 96px;
+    margin-left: 5%;
+    margin-top: 16px;
+    border-radius: 6px;
+    padding-top: -1px;
+    padding-bottom: 12px;
+    line-height: 31px;
+    padding-left: 23px;
+    padding-right: 22px;
+    margin-bottom: 2%;
+}
+
+.media-p {
+    float: left;
+}
+
+.block span {
+    color: red;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.main-container span {
+    color: red;
+    font-weight: bolder;
+}
+
+img {
+    transform: rotate(-9deg);
+}
+
+.image {
+    transform: translate(-44px, 48px);
+}

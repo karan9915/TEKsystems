@@ -1,0 +1,18 @@
+.login-container {
+    width: 46%;
+    height: 24em;
+    background-color: red;
+    padding: 24px;
+    margin: 9% 25%;
+    border-radius: 24px;
+    box-shadow: 15px 12px 11px #555;
+}
+
+h1 {
+    position: center;
+}
+
+body {
+    background: linear-gradient(grey, #aaa, grey);
+}
+

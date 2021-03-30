@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Redressed&display=swap');
+
+.header-container  {
+    background-color:  seagreen;
+    padding: 1px 17px 0px 0px;
+}
+
+h1 {
+    color: white;
+    font-size: 56px;
+    margin: 39px 0px 0px 74px;
+    font-family: 'Ranchers', cursive;
+}
+
+nav ul {
+    margin-right: 1%;
+    margin-left: 28%;
+    transform: translate(42px, -61px);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 13px 27px;
+    border-radius: 10px;
+    transition: box-shadow 0.2s;
+}
+
+nav ul li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Ranchers', cursive;
+font-family: 'Redressed', cursive;
+    
+}
+
+nav ul li:hover {
+    box-shadow: 5px 5px 10px #aaa;
+    background-color: white;  
+    color: seagreen;
+}
+nav ul li a:hover {
+    color: #444
+}
+
+nav ul li:last-child:hover {
+    background-color: seagreen;
+    box-shadow: none;
+}
+
+#input {
+    width: 190px;
+    height: 25px;
+    border-radius: 23px;
+    font-size: 20px;
+    padding-left: 14px;
+    font-weight: bold;
+    color: seagreen;
+    outline: none;
+    font-family: 'Ranchers', cursive;
+font-family: 'Redressed', cursive;
+background: white url("searchLogo.png") right center no-repeat;
+}
+
+.clearfix {
+    clear: both;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 13% 38%;
+            background: linear-gradient(#eee, #aaa, #eee);
+        }
+
+        table {
+            /* border: 2px solid #555; */
+            border-radius: 8px;
+            background-color: #eee;
+            transition: box-shadow 0.2s;
+            box-shadow: 10px 10px 11px #555;
+
+        }
+
+
+
+        table:hover {
+            box-shadow: 15px 15px 30px #555;
+        }
+
+        td {
+            padding: 2px 4px;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+
+        }
+
+        button {
+            padding: 13px 33px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #555;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .AC {
+            padding: 13px 27px;
+        }
+
+        #inputLabel {
+            padding: 0px 6px;
+            font-size: 67px;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing=0>
+        <tr>
+            <td colspan="4" id="inputLabel">0</td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this)" class="AC">AC</button></td>
+            <td><button onclick="pushBtn(this)">0</button></td>
+            <td><button onclick="pushBtn(this)">=</button></td>
+            <td value="/"><button onclick="pushBtn(this)">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this)">9</button></td>
+            <td><button onclick="pushBtn(this)">8</button></td>
+            <td><button onclick="pushBtn(this)">7</button></td>
+            <td><button onclick="pushBtn(this)">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this)">6</button></td>
+            <td><button onclick="pushBtn(this)">5</button></td>
+            <td><button onclick="pushBtn(this)">4</button></td>
+            <td><button onclick="pushBtn(this)">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this)">3</button></td>
+            <td><button onclick="pushBtn(this)">2</button></td>
+            <td><button onclick="pushBtn(this)">1</button></td>
+            <td><button onclick="pushBtn(this)">-</button></td>
+        </tr>
+    </table>
+
+    <script>
+        var inputLabel = document.getElementById("inputLabel");
+        function pushBtn(obj) {
+            var pushed = obj.innerHTML;
+            if (pushed == "=") {
+                inputLabel.innerHTML = eval(inputLabel.innerHTML);
+            } else if (pushed == 'AC') {
+                inputLabel.innerHTML = '0';
+            } else {
+                if (inputLabel.innerHTML == '0')
+                    inputLabel.innerHTML = pushed;
+                else
+                    inputLabel.innerHTML += pushed;
+            }
+            console.log(obj);
+        }
+
+        var colors = ['red', 'green', 'blue', 'orange', 'yellow'];
+        for (var i of colors) {
+            console.log(i);
+        }
+
+    </script>
+</body>
+
+</html>

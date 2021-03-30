@@ -1,0 +1,54 @@
+.jbt {
+   height: 140px;padding-top: 10px;
+   padding-left: 20px;
+}
+
+.jbt h1,p {
+    text-align: center;
+}
+
+.cs{
+    margin-top: -31px;
+}
+
+.card-row {
+    margin: 0;
+    padding-bottom: 1em;
+    background-color: #444;
+    position: relative;
+}
+
+.card {
+    margin: 0 11px;
+    top: 8px;
+    transform: translate(38%,0%);
+}
+
+body {
+    background: linear-gradient(white,black);
+}
+
+#movie-list {
+    margin: 6px -18px;
+}
+
+.play-button {
+    padding: 7px 45px;
+    border-radius: 21px;
+}
+
+.bcrumb {
+    margin-right: 12px;
+    transform: translate(-9px, 8px);
+    
+}
+
+.bcrumb li  a {
+    text-decoration: none;
+}
+
+.accordion {
+    transform: translate(-38%, -12px);
+    padding: 8px 179px;
+    margin: -5px -49px;
+}

@@ -1,0 +1,32 @@
+.box {
+    border: 2px solid black;
+    width: 113px;
+    height: 95px;
+    border-radius: 29px;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    position: relative;
+}
+
+@keyframes myAnimation {
+    0% {
+        top: 0px;
+        background: blue;
+    }
+    50% {
+        top: 500px;
+        width: 400px;
+        background: red;
+    }
+    100% {
+        top: 250px;
+        width: 200px;
+        background-color: yellow;
+    }
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}

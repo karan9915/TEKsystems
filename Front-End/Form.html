@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            padding: 2px;
+        }
+
+        li {
+            display: inline-block;
+            color: white
+        }
+
+        header+nav {
+            background-color: black;
+
+        }
+
+        form {
+            margin-left: 7px;
+            float: right;
+            width: 38%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+            padding: 20px;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .foot-nav {
+            background-color: darkslategray;
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+            padding: 18px;
+        }
+
+        .para {
+            float: left;
+            width: 60%;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: #ccc;
+            color: black;
+            box-shadow: 5px 5px 10px #eee;
+        }
+
+        .movies li {
+            display: inline-block;
+        }
+
+        .movies {
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <header>
+                <h1>
+                    Movie Website
+                </h1>
+            </header>
+            <nav>
+                <ul style="list-style-type: circle;" class="head-nav">
+                    <strong>
+                        <div>
+                            <li><a href="website.html">Home</a></li> |
+                            <li><a href="Tables.html">Movies</a></li> |
+                            <li><a href="#">Tv Shows</a></li> |
+                            <li><a href="#">About us</a></li> |
+                            <li><a href="#">Contact us</a></li>
+                        </div>
+                    </strong>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <article>
+                <div id="pic">
+                    <figure>
+                        <ul class="movies">
+                            <li><img src="Avatar.jpg" alt="">
+                                <figcaption>Avatar</figcaption>
+                            </li>
+                            <li><img src="Conjuring2.jpg" alt="">
+                                <figcaption>Conjuring2</figcaption>
+                            </li>
+                            <li><img src="JurassicWorld.jpg" alt="">
+                                <figcaption>Jurassic World</figcaption>
+                            </li>
+                            <li><img src="POC.jpg" alt="">
+                                <figcaption>Pirates of the Caribbean</figcaption>
+                            </li>
+                            <li><img src="Inception.jpg" alt="">
+                                <figcaption>Inception</figcaption>
+                            </li>
+                        </ul>
+                    </figure>
+                </div>
+                <div class="para">
+                    <p><strong>Avatar</strong> (marketed as James Cameron's Avatar) is a 2009 American[8][9] epic
+                        science
+                        fiction film directed,
+                        written, produced, and co-edited by James Cameron and starring Sam Worthington, Zoe Saldana,
+                        Stephen
+                        Lang,
+                        <strike>Michelle Rodriguez, and Sigourney Weaver. The film is set in the mid-22nd century when
+                            humans
+                            are colonizing></strike>
+                        Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to
+                        mine
+                        the
+                        mineral unobtanium,<sup>[10][11]</sup> a room-temperature superconductor.[12] The expansion of
+                        the
+                        mining colony
+                        threatens the continued existence of a local tribe of Na'vi – a humanoid species indigenous to
+                        Pandora.
+                        <q> The
+                            film's title refers to a genetically engineered Na'vi body operated from the brain of a
+                            remotely
+                            located
+                            human that is used to interact with the natives</q>f Pandora.[13]
+
+                        <em>Development of Avatar began in 1994, when Cameron wrote an 80-page treatment for the
+                            film.[14][15]
+                            Filming
+                            was supposed to take place after the completion of Cameron's 1997 film Titanic, for a
+                            planned
+                            release in
+                            <u> 1999;[16] however, according to Cameron, the necessary technology was not yet available
+                                to
+                                achieve
+                                his
+                                vision of the film.[17] Work on the language of the film's extraterrestrial beings began
+                                in
+                                2005,
+                                and
+                                Cameron began developing the screenplay and fictional universe in early 2006.[18][19]
+                                Avatar
+                                was
+                                officially </u>
+                        </em>
+                        budgeted at $237 million.[4] Other estimates put the cost between $280 million and $310 million
+                        for
+                        production and at $150 million for promotion.[20][21][22] The film made extensive use of new
+                        motion
+                        capture
+                        filming techniques, and was released for traditional viewing, 3D viewing (using the RealD 3D,
+                        Dolby
+                        3D,
+                        XpanD 3D, and IMAX 3D formats), and for "4D" experiences in select South Korean theaters.[23]
+                        The
+                        stereoscopic filmmaking was touted as a breakthrough in cinematic technology.[24]
+                    </p>
+                </div>
+            </article>
+
+            <form>
+                <table style="background-color: darkslategray" border="2" cellspacing=5px cellpadding=5px>
+                    <tr>
+                        <td>
+                            <h4>First Name:</h4>
+                        </td>
+                        <td><input type="text" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Last Name:</h4>
+                        </td>
+                        <td><input type="text" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Email:</h4>
+                        </td>
+                        <td><input type="email" placeholder="Email" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Telephone:</h4>
+                        </td>
+                        <td><input type="tel" pattern="\d[0-9]" placeholder="Telephone No." required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Website Url:</h4>
+                        </td>
+                        <td><input type="url" placeholder="URL"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Birthdate:</h4>
+                        </td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Age No.</h4>
+                        </td>
+                        <td><input type="number" min="5" max="30" value=18></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Education Select:</h4>
+                        </td>
+                        <td><input list="myList"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Interest:</h4>
+                        </td>
+                        <td><input type="checkbox">Music
+                            <input type="checkbox">Arts
+                            <input type="checkbox">Sports
+                            <input type="checkbox">Travel
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+
+            <datalist id="myList">
+                <option>Higher Secondary</option>
+                <option>Graduate</option>
+                <option>Post Graduate</option>
+            </datalist>
+        </section>
+        <div class="clearfix"></div>
+
+        <footer class="clearfix">
+    </div>
+
+    <nav>
+        <ul style="list-style-type: circle;" class="foot-nav">
+            <strong>
+                <li><a href="#">Home</a></li> |
+                <li><a href="#">Movies</a></li> |
+                <li><a href="#">Tv Shows</a></li> |
+                <li><a href="#">About us</a></li> |
+                <li><a href="#">Contact us</a></li>
+            </strong>
+        </ul>
+    </nav>
+    </footer>
+    </div>
+
+</body>
+
+</html>
